@@ -20,6 +20,23 @@ driver.find_element("name","pass").send_keys("your password",Keys.ENTER)
 time.sleep(10)
 driver.quit()
 
+docker --version
+docker pull ubuntu
+docker images
+docker run -it ubuntu
+exit
+docker ps
+docker ps -a
+docker start .........
+docker stop ........
+docker rm .........
+FROM ubuntu
+RUN apt-get update && apt-get install -y curl
+CMD ["echo", "Helllo, Docker!"]
+rename dockerfile.txt dockerfile
+docker build -t mycustomimage .
+docker run mycustomimage
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
