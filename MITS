@@ -14,3 +14,9 @@ git branch -d MITS
 output: git branch
 git log --oneline
 dir
+
+cd my-project
+git log
+git log --oneline
+git log --grep="Fix login bug"
+git show .........
