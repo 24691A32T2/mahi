@@ -1,0 +1,50 @@
+create newfolder: int that
+open notepad
+a=10
+b=20
+sum=a+b
+print(sum)
+save as sum.py
+sum to cmd
+git init
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+type nul >bsr.yml
+go to folder then : in github ->workflows->bsr.yml : open notepad
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Run Python script
+        run: python sum.py
+        cd ..
+        git remote add origin .........
+        git config --list
+        git config --global user "..........."
+        git congig --global user.email "....."
+        git add .
+        git commit -m "hello uma"
+        git branch -M main
+        git push -u origin main
+        git push
+        git pull
+        
