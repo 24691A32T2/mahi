@@ -1,0 +1,16 @@
+mkdir branch-demo
+cd branch-demo 
+git init
+echo "Main branch file" >main.txt
+git add main.txt
+git commit -m "Initial commit in main branch"
+git checkout -b MITS
+echo "this is a test change in the MITS branch." >sample.txt
+git add sample.txt
+git commit -m "Added sample.txt with Initial content in main barnch"
+git checkout main
+git merge MITS
+git branch -d MITS
+output: git branch
+git log --oneline
+dir
